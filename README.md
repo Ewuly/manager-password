@@ -15,6 +15,10 @@ Ce projet est un gestionnaire de mots de passe complet avec un backend Node.js e
 - Axios pour les requêtes HTTP
 - CSS pour le style
 
+### Déploiement
+- Docker
+- Docker Compose
+
 ## Structure du Projet
 
 Le projet est divisé en deux parties principales :
@@ -22,11 +26,26 @@ Le projet est divisé en deux parties principales :
 - `password-manager-backend/`: Contient le code du serveur backend
 - `password-manager-frontend/`: Contient le code de l'application frontend React
 
-## Installation
+## Lancement rapide avec Docker Compose
 
 1. Clonez ce dépôt :
    ```
    git clone https://github.com/votre-nom/password-manager.git
+   cd password-manager
+   ```
+
+2. Lancez l'application avec Docker Compose :
+   ```
+   docker-compose up --build
+   ```
+
+L'application sera accessible à l'adresse `http://localhost`.
+
+## Installation manuelle (pour le développement)
+
+1. Clonez ce dépôt :
+   ```
+   git clone https://github.com/Ewuly/password-manager.git
    cd password-manager
    ```
 
@@ -54,7 +73,7 @@ Le projet est divisé en deux parties principales :
 2. Frontend :
    - Si nécessaire, modifiez l'URL de l'API dans `src/App.js` et les autres composants qui font des appels API.
 
-## Lancement de l'Application
+## Lancement manuel de l'Application
 
 1. Démarrez le serveur backend :
    ```
@@ -73,7 +92,6 @@ L'application sera accessible à l'adresse `http://localhost:3000`.
 ## Fonctionnalités
 
 - Ajout de nouveaux mots de passe
-- Affichage de la liste des mots de passe (noms d'utilisateur uniquement)
 - Modification des mots de passe existants
 - Suppression des mots de passe
 
